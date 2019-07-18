@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=aCircle
+comment0.target=TrafficLight(Circle)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ TrafficLight\r\n
+comment1.params=colour
+comment1.target=void\ setColour(ou.OUColour)
+comment1.text=\r\n\ setColour\ just\ sets\ the\ colour\ of\ the\ light\ as\ told\ to\r\n\ 0\ \=\ red,\ 1\ \=\ green,\ 2\ \=\ orange\r\n
+comment2.params=xPos
+comment2.target=void\ setXPos(int)
+comment2.text=\r\n\ setter\ for\ x\ position\r\n
+comment3.params=yPos
+comment3.target=void\ setYPos(int)
+comment3.text=\r\n\ setter\ for\ y\ position\r\n
+numComments=4

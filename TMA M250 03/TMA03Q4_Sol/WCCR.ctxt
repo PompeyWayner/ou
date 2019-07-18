@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=WCCR()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ WCCR\r\n
+comment1.params=
+comment1.target=void\ readInEntrants()
+comment1.text=\r\n\ Prompts\ the\ user\ for\ a\ pathname\ and\ then\ attempts\ to\ open\ a\r\n\ stream\ of\ the\ specified\ entrants\ file\ which\ must\ be\ in\ \r\n\ CSV\ format.\ Each\ line\ of\ data\ from\ the\ file\ creates\ a\ new\r\n\ Entrant\ object\ which\ is\ then\ stored\ in\ the\ entrants\ list.\r\n\ It\ is\ assumed\ all\ file\ data\ is\ valid.\r\n
+comment2.params=
+comment2.target=double\ generateTime()
+comment2.text=\r\n\ Calculates\ a\ random\ double\ value\ between\ 30.00\ (inclusive)\r\n\ and\ 60.00\ (exclusive).\r\n\ @return\ a\ double\ between\ 30.00\ (inclusive)\r\n\ \ \ \ \ \ \ \ \ and\ 60.00\ (exclusive).\ \r\n
+comment3.params=
+comment3.target=void\ runRally()
+comment3.text=\r\n\ \ Iterates\ over\ the\ list\ of\ entrants,\ and\ for\ each\ entrant\ generates\r\n\ \ a\ random\ number\ between\ 30.00\ (inclusive)\ and\ 60.00\ (exclusive)\ \r\n\ \ which\ is\ used\ to\ set\ the\ time\ (in\ minutes)\ for\ that\ entrant.\r\n
+comment4.params=
+comment4.target=void\ sortEntrantList()
+comment4.text=\r\n\ Sorts\ the\ entrants\ list\ by\ the\ time\ each\ entrant\ has\ taken\ to\r\n\ complete\ the\ rally.\ \r\n
+comment5.params=
+comment5.target=void\ categorise()
+comment5.text=\r\n\ Iterates\ over\ entrants\ list,\ populating\ the\ maps\ e1Results,\r\n\ e2Results\ and\ e3Results,\ with\ the\ correct\ names\ and\r\n\ times\ of\ entrants.\r\n
+numComments=6

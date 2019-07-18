@@ -1,0 +1,16 @@
+Entrant e1 = new Entrant();
+Entrant e2 = new Entrant();
+Entrant e3 = new Entrant();
+
+WCCR rally = new WCCR();
+
+rally.readInEntrants(); // navigate to entrants.txt file when prompted
+
+// set generateTime() temporarily to public to test it here
+rally.generateTime();
+
+rally.runRally();
+
+rally.sortEntrantList();
+
+rally.categorise();

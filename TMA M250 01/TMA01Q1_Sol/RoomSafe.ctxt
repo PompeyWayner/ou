@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=RoomSafe()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ RoomSafe\r\n
+comment1.params=
+comment1.target=java.lang.String\ getPassword()
+comment1.text=\r\n\ \ Returns\ the\ password\ of\ the\ receiver.\r\n
+comment2.params=pw
+comment2.target=boolean\ isValidLength(java.lang.String)
+comment2.text=\r\n\ Return\ true\ if\ the\ argument\ pw\ is\ at\ least\ 8\ characters\ long.\r\n
+comment3.params=pw
+comment3.target=boolean\ hasDigit(java.lang.String)
+comment3.text=\r\n\ Given\ method\r\n\ Return\ true\ if\ at\ least\ one\ of\ the\ characters\ in\ the\ argument\r\n\ pw\ is\ a\ digit\r\n\ otherwise\ return\ false\r\n
+comment4.params=pw
+comment4.target=boolean\ hasUpperCase(java.lang.String)
+comment4.text=\r\n\ Return\ true\ if\ at\ least\ one\ of\ the\ characters\ in\ the\ argument\r\n\ pw\ is\ uppercase\ otherwise\ return\ false\r\n
+comment5.params=pw
+comment5.target=boolean\ isValidPassword(java.lang.String)
+comment5.text=\r\n\ Return\ true\ if\ password\ passes\ all\ 3\ tests.\r\n\ \ -\ At\ least\ 8\ characters.\r\n\ \ -\ Has\ at\ least\ one\ digit.\r\n\ \ -\ Has\ at\ least\ one\ uppercase\ character.\r\n
+comment6.params=pw
+comment6.target=void\ setPassword(java.lang.String)
+comment6.text=\r\n\ Sets\ the\ password\ of\ the\ receiver\ to\ the\ value\ \r\n\ of\ the\ argument\ pw\ only\ if\ pw\ is\ valid.\ Displays\ message\r\n\ acknowledging\ password\ is\ valid\ or\ not\ valid.\r\n
+comment7.params=
+comment7.target=boolean\ hasChanged()
+comment7.text=\r\n\ Return\ false\ if\ password\ is\ still\ the\ default,\ otherwise\r\n\ return\ true\ as\ password\ has\ been\ changed.\r\n
+numComments=8

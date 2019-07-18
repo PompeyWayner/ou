@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ stroke()
+comment0.text=\r\n\ Performs\ an\ arbitrary\ action\ in\ response\ to\ message\ stroke().\r\n
+comment1.params=
+comment1.target=boolean\ canStroke()
+comment1.text=\r\n\ Performs\ an\ arbitrary\ action\ in\ response\ to\ message\ canStroke().\r\n\ Returns\ a\ boolean\ value\ of\ true\ or\ false.\r\n
+comment2.params=
+comment2.target=void\ feed()
+comment2.text=\r\n\ Performs\ an\ arbitrary\ action\ in\ response\ to\ message\ feed().\r\n
+numComments=3

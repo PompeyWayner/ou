@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DeliveryRoutes()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ DeliveryRoutes\r\n
+comment1.params=
+comment1.target=void\ populate()
+comment1.text=\r\n\ Populates\ the\ map\ with\ test\ data\ \r\n
+comment2.params=
+comment2.target=void\ printMap()
+comment2.text=\r\n\ Prints\ out\ each\ delivery\ route\ and\ their\ associated\r\n\ businesses\ that\ are\ on\ that\ route.\r\n
+comment3.params=routeName
+comment3.target=void\ printMapValue(java.lang.String)
+comment3.text=\r\n\ Prints\ out\ the\ businesses\ of\ a\ route\ if\ the\ method\ \r\n\ argument\ is\ a\ valid\ route\ otherwise\ prints\ out\r\n\ route\ not\ found\ message.\r\n\ @param\ routeName\ a\ String\ representing\ the\ route\ name.\r\n
+comment4.params=routeName\ setOfBusinesses
+comment4.target=void\ addMapEntry(java.lang.String,\ java.util.Set)
+comment4.text=\r\n\ Adds\ a\ route\ and\ its\ associated\ businesses\ to\ the\ map,\ \r\n\ which\ are\ taken\ from\ the\ method\ argument.\ If\ the\ route\ name\ is\ \r\n\ already\ present\ the\ existing\ business\ values\ are\ overwritten.\r\n\ @param\ routeName\ a\ String\ representing\ the\ route\ name.\r\n\ @param\ setOfBusinesses\ a\ Set\ of\ Strings\ representing\ businesses.\r\n
+comment5.params=routeName
+comment5.target=boolean\ deleteEntry(java.lang.String)
+comment5.text=\r\n\ Takes\ an\ argument\ representing\ a\ route\ name\ in\ the\ map.\r\n\ If\ the\ route\ name\ exists,\ route\ and\ associated\ businesses\ \r\n\ are\ deleted\ from\ the\ map\ and\ returns\ true,\ otherwise\ returns\ false.\r\n\ @param\ routeName\ a\ String\ representing\ the\ route\ name.\r\n
+comment6.params=aBusinessesNames
+comment6.target=java.util.SortedMap\ selectValues(java.util.Set)
+comment6.text=\r\n\ Returns\ a\ map\ of\ all\ the\ businesses\ in\ each\ route\ that\ have\ \r\n\ the\ same\ names\ as\ those\ that\ are\ in\ the\ method\ arguments\ Set\r\n\ of\ business\ names.\r\n\ @param\ aBusinessesNames\ a\ Set\ of\ Strings\ representing\ the\ \r\n\ \ \ \ \ \ \ \ names\ of\ businesses\ to\ find\ in\ the\ Map\ values.\r\n\ @return\ newMap\ a\ Map\ containing\ only\ the\ businesses\ that\r\n\ \ \ \ \ \ \ \ match\ ones\ that\ appear\ in\ aBusinessesNames.\r\n
+comment7.params=routeName\ aBusiness
+comment7.target=void\ addToValue(java.lang.String,\ java.lang.String)
+comment7.text=\r\n\ Adds\ a\ new\ business\ to\ the\ Set\ of\ businesses\ for\ a\r\n\ particular\ routeName\ (key).\ It\ assumes\ that\ the\ \r\n\ routeName\ exists\ in\ the\ map.\ \r\n\ @param\ routeName\ a\ String\ representing\ the\ key.\r\n\ @param\ aBusiness\ a\ String\ representing\ the\ business.\r\n
+numComments=8

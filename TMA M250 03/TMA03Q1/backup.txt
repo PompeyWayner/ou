@@ -1,0 +1,3 @@
+Circle c = new Circle();
+TrafficLight t = new TrafficLight(c);
+t.setColour(OUColour.GREEN);

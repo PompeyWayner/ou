@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Entrant()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Entrant.\r\n
+comment1.params=
+comment1.target=int\ getNumber()
+comment1.text=\r\n\ getter\ for\ number\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ getter\ for\ name\r\n
+comment3.params=aName
+comment3.target=void\ setName(java.lang.String)
+comment3.text=\r\n\ setter\ for\ name\r\n
+comment4.params=
+comment4.target=java.lang.String\ getCategory()
+comment4.text=\r\n\ getter\ for\ category\r\n
+comment5.params=carType
+comment5.target=void\ setCategory(java.lang.String)
+comment5.text=\r\n\ setter\ for\ category\r\n
+comment6.params=
+comment6.target=double\ getTime()
+comment6.text=\r\n\ getter\ for\ time\r\n
+comment7.params=aTime
+comment7.target=void\ setTime(double)
+comment7.text=\r\n\ setter\ for\ time\r\n
+numComments=8

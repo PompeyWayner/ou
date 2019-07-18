@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LeagueAdmin()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ LeagueAdmin.\r\n
+comment1.params=division\ team
+comment1.target=void\ addTeam(java.lang.String,\ Team)
+comment1.text=\r\n\ Adds\ a\ team\ to\ a\ division.\ If\ division\ already\ exists,\r\n\ team\ is\ added\ to\ division\ otherwise\ a\ new\ division\ is\ \r\n\ created\ and\ then\ team\ is\ added\ to\ the\ new\ division.\r\n\ @param\ division\ which\ team\ is\ to\ be\ added\ to.\r\n\ @param\ team\ is\ Team\ object\ that\ will\ be\ added\ to\ a\ division.\r\n
+comment2.params=division\ teamA\ teamB\ teamAScore\ teamBScore
+comment2.target=void\ recordResult(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int)
+comment2.text=\r\n\ Updates\ two\ specific\ teams\ from\ a\ division\ depending\ on\ the\ \r\n\ method\ argument\ teamAScore\ and\ teamBScore.\r\n\ @param\ division\ a\ String\ indicates\ which\ division\ result\ is\ for.\r\n\ @param\ teamA\ a\ String\ which\ team\ played\ (one\ of\ two).\r\n\ @param\ teamB\ a\ String\ which\ team\ played\ (one\ of\ two).\r\n\ @param\ teamAScore\ an\ integer\ of\ number\ goals\ teamA\ scored.\r\n\ @param\ teamBScore\ an\ integer\ of\ number\ goals\ teamB\ scored.\r\n
+comment3.params=division
+comment3.target=void\ printOutTable(java.lang.String)
+comment3.text=\r\n\ Prints\ out\ the\ statistics\ for\ all\ teams\ in\ the\r\n\ division\ given\ by\ the\ method\ argument.\r\n\ @param\ division\ String\ of\ division\ to\ be\ displayed.\r\n
+numComments=4

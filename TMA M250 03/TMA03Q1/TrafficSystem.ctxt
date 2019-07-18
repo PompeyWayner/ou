@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ setPositions()
+comment1.params=
+comment1.target=void\ manualOverride()
+comment1.text=\r\n\ Provided\ method\ without\ try\ catch\ or\ the\ checking\ for\ 0-4\ state.\r\n\ Extra\ functionality\ is\ to\ be\ added\ to\ deal\ with\ non-integer\ \r\n\ or\ out\ of\ range\ inputs\r\n
+comment2.params=time
+comment2.target=void\ delay(int)
+comment2.text=\r\n\ causes\ execution\ to\ pause\ by\ time\ number\ of\ milliseconds\r\n
+numComments=3

@@ -1,0 +1,18 @@
+//test code
+
+Entrant e1 = new Entrant();
+Entrant e2 = new Entrant();
+Entrant e3 = new Entrant();
+
+WCCR rally = new WCCR();
+
+rally.readInEntrants();
+
+// set generateTime() temporarily to public to test it here
+rally.generateTime();
+
+rally.runRally();
+
+rally.sortEntrantList();
+
+rally.categorise();
