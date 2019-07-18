@@ -1,0 +1,483 @@
+// M250 UNIT 11
+// List and SortedSet Code Examples
+
+ACTIVITY 1
+
+// 1.1 Testing the size of a list 
+
+   /**
+    * Demonstrates sending size() to a newly created empty list.
+    */
+  
+      List<String> herbList = new ArrayList<>();
+      int size  = herbList.size();
+      System.out.println("Size of newly created list is: " + size); 
+   
+
+// 1.2 Adding elements to a list 
+
+  /**
+    * Demonstrates sending add() to a list to add elements.
+    */
+
+      List<String> herbList = new ArrayList<>();
+      herbList.add("Parsley"); 
+      herbList.add("Sage");
+      herbList.add("Rosemary");
+      System.out.println("Size after adding elements: " + herbList.size()); 
+
+      for (String herb : herbList)
+      {
+         System.out.println(herb);
+      }
+  
+// 1.3 Duplicate elements in a list  
+ 
+   /**
+    * Demonstrates that a list can contain duplicates.
+    */
+   
+      List<String> herbList = new ArrayList<>();
+      herbList.add("Parsley");  
+      herbList.add("Sage");
+      herbList.add("Rosemary");
+      herbList.add("Rosemary");
+      herbList.add("Rosemary");
+  
+      System.out.println("Size after attempting to add duplicates: "
+        + herbList.size());    
+   
+      for (String herb : herbList)
+      {
+         System.out.println(herb);
+      }     
+
+// 1.4 Inserting an element at a specified position in a list
+
+   /**
+    * Demonstrates inserting an element into 
+    * a list at a specified index.
+    
+      List<String> sandwich = new ArrayList<>();
+      sandwich.add("Bottom slice");
+      sandwich.add("Top slice");
+      sandwich.add(1, "Filling");
+
+      for (String eachElement : sandwich)
+      {
+         System.out.println(eachElement);
+      }
+
+// ACTIVITY 2
+   
+   /**
+    * Demonstrates the allowed index range for insertion into a list.
+    */
+   
+      List<String> testArray = new ArrayList<>();
+      int position; 
+      testArray.add("salt");
+      testArray.add("vinegar");
+      testArray.add("pepper");
+      testArray.add("mustard");
+      
+      position = 0;  // try different values of position (0 2 4 5 and -1)
+	
+      // Try to add another element at the given position
+      testArray.add(position, "horseradish");
+
+      // If we succeed, print a confirmation
+      System.out.println("Element sucessfully added");
+      for (String eachElement : testArray)
+      {
+         System.out.println(eachElement);
+      }
+
+// ACTIVITY 3
+
+// A Shakespearian-themed code example
+
+	   /**
+	    * Code that inserts elements in the correct
+	    * postions to produce a well-known phrase.
+	    */
+
+	    List<String> phrase = new ArrayList<>();
+	    phrase.add("be");
+
+	    // Other elements added
+
+	    for (String eachElement : phrase)
+	    {
+	      // Prints elements all on one line, separated by spaces
+	      System.out.print(eachElement + " ");
+	    }
+
+// Your Solution
+ 
+// ACTIVITY 4
+   
+// 4.1 Accessing an element at a given index.
+ 
+     List<String> herbList = new ArrayList<>();
+     int position;
+     herbList.add("Sorrel");  
+     herbList.add("Tansy");
+     herbList.add("Parsley");
+     herbList.add("Rosemary");
+
+     position  = 1 ; // try different values for position: 1, 3 and 5
+     String selected = herbList.get(position);
+     System.out.println("Element in position " + position + " is " + selected);
+   
+ 
+// 4.2 Removing an element at a given index.
+
+      List<String> herbList = new ArrayList<>();
+      int position;
+      herbList.add("Sorrel");  
+      herbList.add("Tansy");
+      herbList.add("Parsley");
+      herbList.add("Rosemary");
+      herbList.add("Rosemary");
+   
+      position  = 2 ; // try  other values
+      String removed = herbList.remove(position);
+      System.out.println(removed + " has been removed. List is now: ");
+      for (String herb : herbList)
+      {
+         System.out.println(herb);
+      }
+
+// 4.3 finding the first and last positions at which a specified element can be found
+   
+   /**
+    * Demonstrates the messages indexOf() and lastIndexOf().
+    */
+
+      List<String> herbList = new ArrayList<>();
+      String herb;
+      herbList.add("Oregano");  
+      herbList.add("Oregano");  
+      herbList.add("Basil");
+      herbList.add("Rosemary");
+      herbList.add("Rosemary");
+      herbList.add("Rosemary");
+
+      herb = "Rosemary" ; // also  try "Rosemary" and "Wormwood"
+      int index = herbList.indexOf(herb);
+      int lastIndex = herbList.lastIndexOf(herb);
+
+      System.out.println("Index of " + herb + " is " + index);
+      System.out.println("Last index of " + herb + " is " + lastIndex);
+
+   
+// 4.4 Demonstrates overwriting an element at a given index.
+
+      List<String> herbList = new ArrayList<>();
+      herbList.add("Parsley");  
+      herbList.add("Sage");
+      herbList.add("Rosemary");
+      herbList.add("and");
+      herbList.add("Thyme");
+      
+      System.out.println("Original contents:");
+      for (String eachHerb : herbList)
+      {    
+         System.out.println(eachHerb);
+      }
+
+      herbList.set(0, "Are");  
+      herbList.set(1, "you");  
+      herbList.set(2, "going");
+      herbList.set(3, "to");  
+      herbList.set(4, "Scarborough Fair");  
+      System.out.println("Contents after replacement:");
+      
+     for (String eachHerb : herbList)
+     {    
+        System.out.println(eachHerb);
+     }
+
+
+// ACTIVITY 5 
+  
+// Example code that steps through a traditional form of riddle.
+  
+      List<String> word = new ArrayList<>();
+      word.add("F");
+      word.add("R");
+      word.add("O");
+      word.add("G");
+      System.out.println(word); 
+
+      word.remove(1);
+      System.out.println(word);
+			word.remove(2);
+      System.out.println(word);
+      word.set(0, "T");
+      word.add(1, "O");
+
+     
+		//complete the code to change FROG to TOAD
+
+
+// ACTIVITY 6
+
+// 6.1 Demonstrates conversion of an array to a list.
+ 
+      String[] stringArray = {"The", "cat", "sat", "on", "the", "mat"};
+      List<String> stringList = Arrays.asList(stringArray);
+      System.out.println(stringList);
+
+
+// 6.2  Reversing a list
+//  Demonstrates the use of the Collections reverse() method.
+  
+      List<String> wordList = new ArrayList<>();
+      wordList.add("Team");  
+      wordList.add("Module");
+      wordList.add("the");
+      wordList.add("from");
+      wordList.add("Greetings");
+      
+      System.out.println("The list is: " + wordList);
+      System.out.println("It will now be reversed");
+      
+      Collections.reverse(wordList);
+      
+      System.out.println("The reversed list is: " + wordList);
+
+// 6.3 sorting a list (e.g. alphabetically)
+   
+   /**
+    * Demonstrates the use of the Collections sort() method.
+    * Sets up a list of herbs, then sorts them alphabetically.
+    */
+  
+      List<String> herbList = new ArrayList<>();
+    
+      herbList.add("Chives"); 
+      herbList.add("Elder");
+      herbList.add("Dill");
+      herbList.add("Angelica"); 
+      herbList.add("Basil");
+      
+      System.out.println("The list is: " + herbList);
+      System.out.println("It will now be sorted alphabetically.");
+      
+      Collections.sort(herbList); 
+      
+      System.out.println("The sorted list is: " + herbList);
+
+
+// 6.4 Swapping two elements in a list
+  
+   /**
+    *  Demonstrates the use of the Collections swap() method.
+    *  This code example displays a list of the colours of the rainbow,
+    *  then invites the user to nominate which pair of colours
+    *  they would like swapped.
+    */
+   
+      List<String> spectrum = new ArrayList<>();
+      spectrum.add("Red");  
+      spectrum.add("Orange");  
+      spectrum.add("Yellow");  
+      spectrum.add("Green");  
+      spectrum.add("Blue");
+      spectrum.add("Indigo");  
+      spectrum.add("Violet");  
+ 
+      System.out.println("The list is: " + spectrum);
+      System.out.println("Two elements will now be swapped -- please specify which.");
+      
+      int i = Integer.parseInt(OUDialog.request("First index please"));
+      int j = Integer.parseInt(OUDialog.request("Second index please"));
+      
+      Collections.swap(spectrum, i,j);
+      
+      System.out.println("With elements " + i + " and " + j 
+                           + " swapped the list is: " + spectrum);
+
+// 6.5 Shuffling a list at random
+  
+   /**
+    *  Demonstrates the use of the Collections shuffle() method.
+    *  This code prints out a random shuffle of the digits 0 - 9.
+    */
+
+       List<Integer> digitList = new ArrayList<> ();
+       for (int digit = 0; digit <= 10; digit++)
+       {
+           digitList.add(digit);
+       }
+       System.out.println("Initial list: " + digitList);
+       Collections.shuffle(digitList);
+       System.out.println("Shuffled list: " + digitList);
+
+  // 6.6 locating a sublist in a list 
+  
+  /**
+   * Demonstrates the use of the Collections indexOfSubList() method.
+   * This example code sets up a list of 100 integers. It then invites 
+   * the user to enter a sublist via dialogue boxes, and then searches for
+   * that the sublist. If the sublist is found its position is reported.
+   */
+ 
+      // This part is just to set up an array of 100 numbers.
+      Integer[] numbers = {
+          1, 3, 1, 6, 0, 1, 8, 8, 3, 2,
+          9, 2, 4, 0, 1, 7, 9, 6, 2, 5,
+          2, 2, 3, 8, 0, 4, 6, 2, 6, 1,
+          7, 0, 1, 9, 3, 4, 2, 5, 0, 8,
+          3, 4, 4, 0, 9, 2, 2, 7, 1, 9,
+          9, 2, 3, 5, 6, 9, 8, 1, 4, 3,
+          0, 0, 9, 1, 4, 3, 7, 8, 0, 0,
+          9, 4, 5, 2, 3, 3, 0, 2, 1, 6,
+          8, 6, 4, 6, 0, 1, 7, 7, 2, 8,
+          5, 1, 4, 2, 8, 0, 9, 5, 1, 9 
+        };
+      //Then the array is converted into a list.
+      List<Integer> numberList = Arrays.asList(numbers);
+      System.out.println("The list is: " + numberList);
+      
+      System.out.println("Please enter the sublist to search for, one digit at a time.");
+      List<Integer> searchList = new ArrayList<>();
+      String prompt = "Please input a digit. Press Cancel to end."; 
+      String input = OUDialog.request(prompt);
+
+      while (input != null)
+      { 
+         searchList.add(Integer.parseInt(input)); 
+         input = OUDialog.request(prompt);
+      }
+      
+      int foundAt = Collections.indexOfSubList(numberList, searchList);
+      if (foundAt != -1)
+      {
+         System.out.println(searchList +  " found at index " + foundAt + ".");
+      }
+      else
+      {
+         System.out.println("Sublist " + searchList + " not found.");
+      }    
+
+// 6.7 Finding maximum and minimum values in a list 
+    
+   /**
+    *  Demonstrates the use of the Collections min() and max() methods.
+    *  This example code challenges the user to spot the biggest and
+    *  smallest binary numbers represented by a series of long 
+    *  patterns of 0's and 1's.
+    */
+ 
+      List<String> patternList = new ArrayList<>();
+      patternList.add("0000101001000010000100010010010");
+      patternList.add("0000101001000010100010010010010");
+      patternList.add("0000101001001001000100010010010");
+      patternList.add("0000101001000010100010010011010");
+       
+      System.out.println("Here are some binary numbers.");
+      for (String eachPattern : patternList)
+      {
+         System.out.println(eachPattern);
+      }
+      System.out.println("Can you spot the biggest and smallest number?");
+       
+      new Delay(5);
+       
+      String minPattern = Collections.min(patternList);
+      String maxPattern = Collections.max(patternList);
+       
+      System.out.println("The biggest is: " + maxPattern);
+      System.out.println("The smallest is: " + minPattern);  
+
+// ACTIVITY 7
+   
+   /**
+    * Calculates statistics for batch of user data
+    * To be completed according to the specification in Activity 7.
+    */
+ 
+      // insert the code for each step as indicated below
+      
+      // Step 1 - create empty list
+ 			List<Integer> userData = new ArrayList<>();
+
+      // Step 2 - data entry
+      String prompt = "Please input a digit. Press Cancel to end."; 
+      String input = OUDialog.request(prompt);
+
+      while (input != null)
+      { 
+         userData.add(Integer.parseInt(input)); 
+         input = OUDialog.request(prompt);
+      }
+   
+      // Step 3 - sort data
+			Collections.sort(userData);
+
+      // Step 4 - total data and calculate average
+      int total = 0;
+      for(int number : userData)
+      {
+         total += number;
+      }
+			float avg = ((float) total) / userData.size();
+
+      // Step 5 - find median
+			float median = 0.0;
+  		if(userData.size() % 2 = 0) // even number
+			{
+				median = (userData.size() - 1) + (userData.size() + 1)
+      }
+			else
+			{
+				median = 
+				
+      
+      // Step 6 - find maximum and minimum
+      int minVal = Collections.min(userData);
+			int maxVal = Collections.max(userData);
+
+      // Step 7 - output results
+			System.out.println("There were " + userData.size() + " numbers");
+			System.out.println("The average was " + avg);
+			System.out.println("The maximum was " + maxVal + " and the minimum was " + minVal);
+
+
+// ACTIVITY 8
+// Bulk manipulation of a list
+
+	// This is incomplete code
+
+			// Set up list1 and list2 first
+			Character[] array1 = 
+			{'a', 'b', 'r', 'a', 'c', 'a', 'd', 'a', 'b', 'r', 'a'};
+
+			List<Character> list1 = Arrays.asList(array1);
+
+			Character[] array2 = {'d', 'a', 'b', 'c', 'h', 'i', 'c', 'k'};
+
+			List<Character> list2 = Arrays.asList(array2);
+
+			// Display lists
+			System.out.println("This is list 1: " + list1);
+			System.out.println("This is list 2: " + list2);
+
+			// Insert your code here 
+
+			// To try addAll()
+			List<Character> list5= new ArrayList<>(list1);
+			test1.addAll(list2);
+			System.out.println(test1);
+			// To try removeAll()
+			list4.removeAll(list2);
+			System.out.println(list4);
+			// To try retainAll()
+			list5.retainAll(list2);
+			System.out.println(list5);
+			// To create a treeSet from list1
+			Set<Character> list6 = new TreeSet<>(list1);
+		  System.out.println(list6);

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ reset()
+comment1.params=
+comment1.target=void\ addToSeconds()
+comment2.params=
+comment2.target=java.lang.String\ displayTime()
+comment3.params=delay
+comment3.target=void\ delayTime(int)
+numComments=4

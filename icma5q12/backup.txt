@@ -1,0 +1,4 @@
+Weather w = new Weather();
+w.getFile();
+String pathname = OUFileChooser.getFilename();
+w.readTemperature(pathname);

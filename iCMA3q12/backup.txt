@@ -1,0 +1,4 @@
+Watch w = new Watch(479);
+w.displayTime();
+w.addToSeconds();
+w.reset();

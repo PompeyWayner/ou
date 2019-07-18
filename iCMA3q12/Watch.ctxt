@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=aSeconds
+comment0.target=Watch(int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Watch\r\n
+comment1.params=
+comment1.target=double\ getSeconds()
+comment1.text=\r\n\ Getter\ for\ seconds\r\n
+comment2.params=aSeconds
+comment2.target=void\ setSeconds(double)
+comment2.text=\r\n\ Setter\ for\ seconds\r\n
+comment3.params=
+comment3.target=void\ reset()
+comment3.text=\r\n\ Resets\ second\ to\ zero\r\n
+comment4.params=
+comment4.target=void\ addToSeconds()
+comment4.text=\r\n\ adds\ 0.01\ seconds\ to\ seconds.\ Resets\ to\ zero\ if\ >\=\ 1\ hour\r\n
+comment5.params=
+comment5.target=java.lang.String\ displayTime()
+comment5.text=\r\n\ returns\ the\ formatted\ time\ in\ seconds\r\n
+comment6.params=delay
+comment6.target=void\ delayTime(int)
+comment6.text=\r\n\ increments\ seconds\ by\ delay\ hundredths\ of\ a\ second\r\n
+numComments=7

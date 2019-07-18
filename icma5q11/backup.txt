@@ -1,0 +1,4 @@
+Animals a = new Animals();
+a.populate();
+char[] l = {'p','c','d'};
+a.trimList(l);
